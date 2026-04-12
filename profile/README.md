@@ -6,7 +6,7 @@
 
 Publishing robot model assets and technical materials for developer integration, visualization, and learning.
 
-[Repositories](https://github.com/orgs/mirrormerobotics/repositories) · [Developer Resources](#developer-resources) · [Contact](#contact)
+[Repositories](https://github.com/orgs/mirrormerobotics/repositories) · [BPX Repository](https://github.com/mirrormerobotics/BPX) · [Developer Resources](#developer-resources) · [Contact](#contact)
 
 </div>
 
@@ -24,11 +24,11 @@ Please follow product documentation and use hardware and software **safely and i
 
 ## Open Source Projects
 
-Our current public repositories focus on robot description assets. See **[Repositories](https://github.com/orgs/mirrormerobotics/repositories)** for the latest public projects.
+Our current public repositories focus on robot description assets. See **[Repositories](https://github.com/orgs/mirrormerobotics/repositories)** for the latest public projects, and start with **[BPX](https://github.com/mirrormerobotics/BPX)** for the currently published quadruped model assets.
 
 | Category | Includes | Typical use |
 | --- | --- | --- |
-| **Robot Models / URDF** | URDF or Xacro files, meshes, description assets, and related model metadata | Visualization, simulation setup, motion planning, and integration research |
+| **Robot Models / URDF** | Robot description assets and model metadata. Current example: **[BPX](https://github.com/mirrormerobotics/BPX)** with [URDF assets](https://github.com/mirrormerobotics/BPX/tree/master/bpx) and [MuJoCo assets](https://github.com/mirrormerobotics/BPX/tree/master/mujoco). | Visualization, simulation setup, motion planning, and integration research |
 | **Documentation** | Setup notes, usage guidance, version notes, and model-related constraints | Documentation lookup, compatibility checks, and troubleshooting |
 
 ---
@@ -51,7 +51,7 @@ For security-related issues, please use the reporting channel specified by each 
 
 ## Contact
 
-- Website and developer documentation: *Coming soon*
+- Website and developer documentation: [BPX Repository](https://github.com/mirrormerobotics/BPX)
 - Business inquiries: *Public contact email*
 - Technical support: *Support email or service portal*
 - Security disclosure: *To be published*
