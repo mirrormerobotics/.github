@@ -6,7 +6,7 @@
 
 Publishing robot model assets and technical materials for developer integration, visualization, and learning.
 
-[Repositories](https://github.com/orgs/mirrormerobotics/repositories) · [BPX Repository](https://github.com/mirrormerobotics/BPX) · [Developer Resources](#developer-resources) · [Contact](#contact)
+[Repositories](https://github.com/orgs/mirrormerobotics/repositories) · [BPX Repository](https://github.com/mirrormerobotics/BPX) · [BPX-Pro Repository](https://github.com/mirrormerobotics/BPX-Pro) · [Developer Resources](#developer-resources) · [Contact](#contact)
 
 </div>
 
@@ -24,11 +24,11 @@ Please follow product documentation and use hardware and software **safely and i
 
 ## Open Source Projects
 
-Our current public repositories focus on robot description assets. See **[Repositories](https://github.com/orgs/mirrormerobotics/repositories)** for the latest public projects, and start with **[BPX](https://github.com/mirrormerobotics/BPX)** for the currently published quadruped model assets.
+Our current public repositories focus on robot description assets. See **[Repositories](https://github.com/orgs/mirrormerobotics/repositories)** for the latest public projects, and start with **[BPX](https://github.com/mirrormerobotics/BPX)** or **[BPX-Pro](https://github.com/mirrormerobotics/BPX-Pro)** for the currently published quadruped model assets.
 
 | Category | Includes | Typical use |
 | --- | --- | --- |
-| **Robot Models / URDF** | Robot description assets and model metadata. Current example: **[BPX](https://github.com/mirrormerobotics/BPX)** with [URDF assets](https://github.com/mirrormerobotics/BPX/tree/master/bpx) and [MuJoCo assets](https://github.com/mirrormerobotics/BPX/tree/master/mujoco). | Visualization, simulation setup, motion planning, and integration research |
+| **Robot Models / URDF** | Robot description assets and model metadata. Current examples: **[BPX](https://github.com/mirrormerobotics/BPX)** with [URDF assets](https://github.com/mirrormerobotics/BPX/tree/master/bpx) and [MuJoCo assets](https://github.com/mirrormerobotics/BPX/tree/master/mujoco), and **[BPX-Pro](https://github.com/mirrormerobotics/BPX-Pro)** with [URDF assets](https://github.com/mirrormerobotics/BPX-Pro/tree/master/bpxPro), [MuJoCo assets](https://github.com/mirrormerobotics/BPX-Pro/tree/master/mujoco), and [USD assets](https://github.com/mirrormerobotics/BPX-Pro/tree/master/usd). | Visualization, simulation setup, motion planning, and integration research |
 | **Documentation** | Setup notes, usage guidance, version notes, and model-related constraints | Documentation lookup, compatibility checks, and troubleshooting |
 
 ---
@@ -51,7 +51,7 @@ For security-related issues, please use the reporting channel specified by each 
 
 ## Contact
 
-- Website and developer documentation: [BPX Repository](https://github.com/mirrormerobotics/BPX)
+- Website and developer documentation: [BPX Repository](https://github.com/mirrormerobotics/BPX), [BPX-Pro Repository](https://github.com/mirrormerobotics/BPX-Pro)
 - Business inquiries: *Public contact email*
 - Technical support: *Support email or service portal*
 - Security disclosure: *To be published*
