@@ -28,7 +28,7 @@ Our current public repositories focus on robot description assets. See **[Reposi
 
 | Category | Includes | Typical use |
 | --- | --- | --- |
-| **Robot Models / URDF** | Robot description assets and model metadata. Current examples: **[BPX](https://github.com/mirrormerobotics/BPX)** with [URDF assets](https://github.com/mirrormerobotics/BPX/tree/master/bpx) and [MuJoCo assets](https://github.com/mirrormerobotics/BPX/tree/master/mujoco), and **[BPX-Pro](https://github.com/mirrormerobotics/BPX-Pro)** with [URDF assets](https://github.com/mirrormerobotics/BPX-Pro/tree/master/bpxPro), [MuJoCo assets](https://github.com/mirrormerobotics/BPX-Pro/tree/master/mujoco), and [USD assets](https://github.com/mirrormerobotics/BPX-Pro/tree/master/usd). | Visualization, simulation setup, motion planning, and integration research |
+| **Robot Models / URDF** | Robot description assets and model metadata. Current examples: **[BPX](https://github.com/mirrormerobotics/BPX)** with [URDF assets](https://github.com/mirrormerobotics/BPX/tree/master/bpx), [MuJoCo assets](https://github.com/mirrormerobotics/BPX/tree/master/mujoco), and [USD assets](https://github.com/mirrormerobotics/BPX/tree/master/usd), and **[BPX-Pro](https://github.com/mirrormerobotics/BPX-Pro)** with [URDF assets](https://github.com/mirrormerobotics/BPX-Pro/tree/master/bpxPro), [MuJoCo assets](https://github.com/mirrormerobotics/BPX-Pro/tree/master/mujoco), and [USD assets](https://github.com/mirrormerobotics/BPX-Pro/tree/master/usd). | Visualization, simulation setup, motion planning, and integration research |
 | **Documentation** | Setup notes, usage guidance, version notes, and model-related constraints | Documentation lookup, compatibility checks, and troubleshooting |
 
 ---
