@@ -9,6 +9,7 @@ body:
       description: Which project should receive this improvement?
       options:
         - bpx_sdk_open
+        - mirrorme_rl_train
         - bpx-mindplus-extension
         - BPX model assets
         - BPX-Pro model assets
