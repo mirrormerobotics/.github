@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Product and technical support
+    url: https://www.mirrormetech.com/cn/
+    about: Use the official support channels for hardware, purchasing, education, or private account questions.
+  - name: Security vulnerability
+    url: https://github.com/mirrormerobotics/.github/security/policy
+    about: Read the private reporting instructions before disclosing a vulnerability.

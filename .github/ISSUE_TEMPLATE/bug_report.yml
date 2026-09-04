@@ -1,0 +1,86 @@
+name: Bug report
+description: Report a reproducible problem in a MirrorMe Robotics repository.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a problem. Do not include credentials, private robot data, or security vulnerabilities in this public form. See the organization's Security Policy for private reporting.
+
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      description: Which project is affected?
+      options:
+        - bpx_sdk_open
+        - bpx-mindplus-extension
+        - BPX model assets
+        - BPX-Pro model assets
+        - robot-mirrorme-bpx
+        - primitive-mirrorme-bpx-quadruped-rbnx
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: Provide the release, tag, or commit hash where the problem occurs.
+      placeholder: "For example: v1.0.8 or 19cb373"
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include the operating system, architecture, runtime/tool versions, robot model, firmware, and connection type when relevant.
+      placeholder: |
+        OS and architecture:
+        Runtime or tool version:
+        Robot and firmware:
+        Connection:
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Provide the smallest reliable sequence that demonstrates the problem.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Attach relevant evidence after removing sensitive information.
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety checklist
+      options:
+        - label: I stopped hardware testing if this issue could cause unexpected physical motion.
+          required: true
+        - label: I removed credentials, private network details, and personal or proprietary data.
+          required: true
+        - label: This report does not disclose a security vulnerability.
+          required: true

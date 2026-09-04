@@ -1,12 +1,12 @@
 <div align="center">
 
-# MirrorMe Robotics
+# MirrorMeTech Robotics
 
-**Hangzhou MirrorMe Technology Co., Ltd.**
+**English** | [简体中文](https://github.com/mirrormerobotics/.github/blob/main/profile/README.zh-CN.md)
 
-Publishing robot model assets and technical materials for developer integration, visualization, and learning.
+Publishing open-source tools, robot model assets, and technical materials for BPX development, simulation, education, and integration.
 
-[Repositories](https://github.com/orgs/mirrormerobotics/repositories) · [BPX Repository](https://github.com/mirrormerobotics/BPX) · [BPX-Pro Repository](https://github.com/mirrormerobotics/BPX-Pro) · [Developer Resources](#developer-resources) · [Contact](#contact)
+[Repositories](https://github.com/orgs/mirrormerobotics/repositories) · [BPX SDK](https://github.com/mirrormerobotics/bpx_sdk_open) · [Robot Models](https://github.com/mirrormerobotics/BPX) · [Developer Resources](#developer-resources) · [Contact](#contact)
 
 </div>
 
@@ -14,22 +14,24 @@ Publishing robot model assets and technical materials for developer integration,
 
 ## About
 
-MirrorMe Robotics focuses on intelligent robotics and related technologies, with an emphasis on making core capabilities accessible to developers and partners in a clear and reusable way.
+MirrorMeTech Robotics focuses on intelligent robotics and related technologies, with an emphasis on making core capabilities accessible to developers, educators, researchers, and partners.
 
-This GitHub organization is the public entry point for our repositories and technical materials. In the current stage, our open-source content focuses on **robot models and URDF assets**, so developers can quickly find the files needed for visualization, simulation setup, and integration research.
-
-Please follow product documentation and use hardware and software **safely and in compliance** with applicable regulations.
+This GitHub organization is the public entry point for the BPX SDK, robot model assets, visual-programming tools, and early-stage deployment integrations. Please follow the documentation in each repository and use all hardware and software safely and in compliance with applicable regulations.
 
 ---
 
 ## Open Source Projects
 
-Our current public repositories focus on robot description assets. See **[Repositories](https://github.com/orgs/mirrormerobotics/repositories)** for the latest public projects, and start with **[BPX](https://github.com/mirrormerobotics/BPX)** or **[BPX-Pro](https://github.com/mirrormerobotics/BPX-Pro)** for the currently published quadruped model assets.
+| Project | Description |
+| --- | --- |
+| **[bpx_sdk_open](https://github.com/mirrormerobotics/bpx_sdk_open)** | C++ and Python SDK for physical robot control, telemetry, and research, with state-query, motion-control, and 12-DOF joint-control APIs. |
+| **[bpx-mindplus-extension](https://github.com/mirrormerobotics/bpx-mindplus-extension)** | BPX blocks and extension-building tools for Mind+ Python mode, designed for visual programming, education, and demonstrations on 64-bit Windows 10/11. |
+| **[BPX](https://github.com/mirrormerobotics/BPX)** | Official standard BPX model assets in [URDF](https://github.com/mirrormerobotics/BPX/tree/master/bpx), [MuJoCo MJCF](https://github.com/mirrormerobotics/BPX/tree/master/mjcf), and [USD](https://github.com/mirrormerobotics/BPX/tree/master/usd) formats. |
+| **[BPX-Pro](https://github.com/mirrormerobotics/BPX-Pro)** | Official BPX-Pro model assets in [URDF](https://github.com/mirrormerobotics/BPX-Pro/tree/master/bpxPro), [MuJoCo](https://github.com/mirrormerobotics/BPX-Pro/tree/master/mujoco), and [USD](https://github.com/mirrormerobotics/BPX-Pro/tree/master/usd) formats. |
+| **[robot-mirrorme-bpx](https://github.com/mirrormerobotics/robot-mirrorme-bpx)** | Safety-first BPX Robonix deployment with pinned models, offline validation, and no-motion, replay, fake-state, and SDK read-only profiles. |
+| **[primitive-mirrorme-bpx-quadruped-rbnx](https://github.com/mirrormerobotics/primitive-mirrorme-bpx-quadruped-rbnx)** | State-only BPX Robonix adapter for odometry and ROS 2 joint states, with SDK, replay, and fake backends plus containerized tests. |
 
-| Category | Includes | Typical use |
-| --- | --- | --- |
-| **Robot Models / URDF** | Robot description assets and model metadata. Current examples: **[BPX](https://github.com/mirrormerobotics/BPX)** with [URDF assets](https://github.com/mirrormerobotics/BPX/tree/master/bpx), [MuJoCo assets](https://github.com/mirrormerobotics/BPX/tree/master/mujoco), and [USD assets](https://github.com/mirrormerobotics/BPX/tree/master/usd), and **[BPX-Pro](https://github.com/mirrormerobotics/BPX-Pro)** with [URDF assets](https://github.com/mirrormerobotics/BPX-Pro/tree/master/bpxPro), [MuJoCo assets](https://github.com/mirrormerobotics/BPX-Pro/tree/master/mujoco), and [USD assets](https://github.com/mirrormerobotics/BPX-Pro/tree/master/usd). | Visualization, simulation setup, motion planning, and integration research |
-| **Documentation** | Setup notes, usage guidance, version notes, and model-related constraints | Documentation lookup, compatibility checks, and troubleshooting |
+The Robonix repositories are early-stage and intentionally read-only for hardware-backed use. They do not currently provide a production motion-command path, mapping, localization, or autonomous navigation.
 
 ---
 
@@ -37,13 +39,11 @@ Our current public repositories focus on robot description assets. See **[Reposi
 
 ## Developer Resources
 
-- Start with the repository `README` to identify the supported robot models, file layout, and recommended usage flow.
-- Look for `URDF` or `Xacro` files, meshes, and any preview or visualization instructions for tools such as RViz or simulation environments.
-- Check documentation for version notes, dependency requirements, coordinate conventions, and known limitations before integrating the models into your workflow.
-- Review license terms carefully, especially for meshes, textures, and branded assets, before redistribution or commercial use.
-- Use GitHub **Topics** such as `urdf`, `robot-model`, `description`, and `docs` to find related repositories quickly.
-
-For security-related issues, please use the reporting channel specified by each repository, or contact us using the channel below once published.
+- Start with **[bpx_sdk_open](https://github.com/mirrormerobotics/bpx_sdk_open)** to connect to and program a physical BPX robot.
+- Use **[bpx-mindplus-extension](https://github.com/mirrormerobotics/bpx-mindplus-extension)** for visual block programming.
+- Use **[BPX](https://github.com/mirrormerobotics/BPX)** or **[BPX-Pro](https://github.com/mirrormerobotics/BPX-Pro)** for URDF, MuJoCo, and USD workflows. Keep the published directory layout intact so asset references continue to resolve.
+- Start with **[robot-mirrorme-bpx](https://github.com/mirrormerobotics/robot-mirrorme-bpx)** when evaluating the Robonix integration and review its safety, validation, and hardware acceptance documentation before use.
+- Review each repository's `LICENSE`, `NOTICE`, version notes, platform requirements, and known limitations before integration or redistribution.
 
 ---
 
@@ -51,9 +51,10 @@ For security-related issues, please use the reporting channel specified by each 
 
 ## Contact
 
-- Website and developer documentation: [BPX Repository](https://github.com/mirrormerobotics/BPX), [BPX-Pro Repository](https://github.com/mirrormerobotics/BPX-Pro)
-- Business inquiries: *Public contact email*
-- Technical support: *Support email or service portal*
-- Security disclosure: *To be published*
+- Website: [mirrormetech.com](https://www.mirrormetech.com/cn/)
+- Technical support: [support@mirrormetech.com](mailto:support@mirrormetech.com)
+- Education and university collaboration: [education@mirrormetech.com](mailto:education@mirrormetech.com)
+- Purchasing and partnerships: [partner@mirrormetech.com](mailto:partner@mirrormetech.com)
+- Repository questions and bug reports: use the **Issues** page of the relevant repository
 
 ---

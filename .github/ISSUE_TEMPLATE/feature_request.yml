@@ -1,0 +1,57 @@
+name: Feature request
+description: Suggest an improvement to a MirrorMe Robotics project.
+title: "[Feature]: "
+body:
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      description: Which project should receive this improvement?
+      options:
+        - bpx_sdk_open
+        - bpx-mindplus-extension
+        - BPX model assets
+        - BPX-Pro model assets
+        - robot-mirrorme-bpx
+        - primitive-mirrorme-bpx-quadruped-rbnx
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: What problem would this feature solve, and who would benefit?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the behavior, API, asset, or workflow you would like to add.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Describe existing workarounds or alternative designs.
+
+  - type: textarea
+    id: safety
+    attributes:
+      label: Safety and compatibility impact
+      description: Explain any effect on physical motion, command limits, existing APIs, model formats, platforms, or hardware.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checklist
+      options:
+        - label: I searched existing issues and pull requests for similar proposals.
+          required: true
+        - label: I have not included credentials, private data, or a security vulnerability.
+          required: true
