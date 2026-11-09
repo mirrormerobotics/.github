@@ -8,6 +8,7 @@ body:
       label: Project
       description: Which project should receive this improvement?
       options:
+        - mirrorme_robot_sdk
         - bpx_sdk_open
         - mirrorme_rl_train
         - bpx-mindplus-extension

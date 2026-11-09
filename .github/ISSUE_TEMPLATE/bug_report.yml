@@ -13,6 +13,7 @@ body:
       label: Project
       description: Which project is affected?
       options:
+        - mirrorme_robot_sdk
         - bpx_sdk_open
         - mirrorme_rl_train
         - bpx-mindplus-extension

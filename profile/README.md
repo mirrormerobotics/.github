@@ -4,9 +4,9 @@
 
 **English** | [简体中文](https://github.com/mirrormerobotics/.github/blob/main/profile/README.zh-CN.md)
 
-Publishing open-source tools, robot model assets, and technical materials for BPX development, simulation, reinforcement learning, education, and integration.
+Publishing open-source SDKs, tools, robot model assets, and technical materials for MirrorMe robot development, simulation, reinforcement learning, education, and integration.
 
-[Repositories](https://github.com/orgs/mirrormerobotics/repositories) · [BPX SDK](https://github.com/mirrormerobotics/bpx_sdk_open) · [Robot Models](https://github.com/mirrormerobotics/BPX) · [Developer Resources](#developer-resources) · [Contact](#contact)
+[Repositories](https://github.com/orgs/mirrormerobotics/repositories) · [Robot SDK](https://github.com/mirrormerobotics/mirrorme_robot_sdk) · [Robot Models](https://github.com/mirrormerobotics/BPX) · [Developer Resources](#developer-resources) · [Contact](#contact)
 
 </div>
 
@@ -16,7 +16,7 @@ Publishing open-source tools, robot model assets, and technical materials for BP
 
 MirrorMeTech Robotics focuses on intelligent robotics and related technologies, with an emphasis on making core capabilities accessible to developers, educators, researchers, and partners.
 
-This GitHub organization is the public entry point for the BPX SDK, reinforcement-learning training, robot model assets, visual-programming tools, and early-stage deployment integrations. Please follow the documentation in each repository and use all hardware and software safely and in compliance with applicable regulations.
+This GitHub organization is the public entry point for MirrorMe Robot SDK, model-specific reinforcement-learning training, robot model assets, visual-programming tools, and early-stage deployment integrations. Please follow the documentation in each repository and use all hardware and software safely and in compliance with applicable regulations.
 
 ---
 
@@ -24,13 +24,15 @@ This GitHub organization is the public entry point for the BPX SDK, reinforcemen
 
 | Project | Description |
 | --- | --- |
-| **[bpx_sdk_open](https://github.com/mirrormerobotics/bpx_sdk_open)** | C++ and Python SDK for physical robot control, telemetry, and research, with state-query, motion-control, and 12-DOF joint-control APIs. |
+| **[mirrorme_robot_sdk](https://github.com/mirrormerobotics/mirrorme_robot_sdk)** | Unified C++ and Python SDK for MirrorMe robots, currently covering BPX, BPX-Pro, and BPW. Provides state-query, motion-control, and joint-control APIs according to model support, with support for additional models planned. |
 | **[mirrorme_rl_train](https://github.com/mirrormerobotics/mirrorme_rl_train)** | Open BPX reinforcement-learning baseline using Isaac Lab and RSL-RL PPO for simulation training, evaluation, and TorchScript/ONNX policy export. Physical-robot deployment is out of scope. |
 | **[bpx-mindplus-extension](https://github.com/mirrormerobotics/bpx-mindplus-extension)** | BPX blocks and extension-building tools for Mind+ Python mode, designed for visual programming, education, and demonstrations on 64-bit Windows 10/11. |
 | **[BPX](https://github.com/mirrormerobotics/BPX)** | Official standard BPX model assets in [URDF](https://github.com/mirrormerobotics/BPX/tree/master/bpx), [MuJoCo MJCF](https://github.com/mirrormerobotics/BPX/tree/master/mjcf), and [USD](https://github.com/mirrormerobotics/BPX/tree/master/usd) formats. |
 | **[BPX-Pro](https://github.com/mirrormerobotics/BPX-Pro)** | Official BPX-Pro model assets in [URDF](https://github.com/mirrormerobotics/BPX-Pro/tree/master/bpxPro), [MuJoCo](https://github.com/mirrormerobotics/BPX-Pro/tree/master/mujoco), and [USD](https://github.com/mirrormerobotics/BPX-Pro/tree/master/usd) formats. |
 | **[robot-mirrorme-bpx](https://github.com/mirrormerobotics/robot-mirrorme-bpx)** | Safety-first BPX Robonix deployment with pinned models, offline validation, and no-motion, replay, fake-state, and SDK read-only profiles. |
 | **[primitive-mirrorme-bpx-quadruped-rbnx](https://github.com/mirrormerobotics/primitive-mirrorme-bpx-quadruped-rbnx)** | State-only BPX Robonix adapter for odometry and ROS 2 joint states, with SDK, replay, and fake backends plus containerized tests. |
+
+MirrorMe Robot SDK replaces the BPX-only **[bpx_sdk_open](https://github.com/mirrormerobotics/bpx_sdk_open)**. The legacy SDK is linked here for existing BPX projects; new integrations should use MirrorMe Robot SDK.
 
 The Robonix repositories are early-stage and intentionally read-only for hardware-backed use. They do not currently provide a production motion-command path, mapping, localization, or autonomous navigation.
 
@@ -40,7 +42,7 @@ The Robonix repositories are early-stage and intentionally read-only for hardwar
 
 ## Developer Resources
 
-- Start with **[bpx_sdk_open](https://github.com/mirrormerobotics/bpx_sdk_open)** to connect to and program a physical BPX robot.
+- Start with **[mirrorme_robot_sdk](https://github.com/mirrormerobotics/mirrorme_robot_sdk)** to connect to and program a supported MirrorMe robot. Check the [product support matrix](https://github.com/mirrormerobotics/mirrorme_robot_sdk/blob/master/README.md#project-scope-and-product-support) for model-specific APIs and firmware requirements. BPW currently supports state queries and motion control, but not joint-level control.
 - Use **[mirrorme_rl_train](https://github.com/mirrormerobotics/mirrorme_rl_train)** to train, evaluate, and export BPX locomotion policies in Isaac Lab.
 - Use **[bpx-mindplus-extension](https://github.com/mirrormerobotics/bpx-mindplus-extension)** for visual block programming.
 - Use **[BPX](https://github.com/mirrormerobotics/BPX)** or **[BPX-Pro](https://github.com/mirrormerobotics/BPX-Pro)** for URDF, MuJoCo, and USD workflows. Keep the published directory layout intact so asset references continue to resolve.
