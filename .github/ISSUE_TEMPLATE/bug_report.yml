@@ -19,6 +19,7 @@ body:
         - bpx-mindplus-extension
         - BPX model assets
         - BPX-Pro model assets
+        - BPW model assets
         - robot-mirrorme-bpx
         - primitive-mirrorme-bpx-quadruped-rbnx
         - Other
